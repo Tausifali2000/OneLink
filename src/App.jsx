@@ -4,7 +4,8 @@ import Home from "./pages/home/home"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
 import Anime from "./pages/anime/Anime"
-import Entertainment from "./pages/movies/Entertainment"
+import Entertainment from "./pages/entertainment/Entertainment"
+import Softwares from "./pages/softwares/Softwares"
 
 const router = createBrowserRouter(
   [
@@ -33,6 +34,16 @@ const router = createBrowserRouter(
       </div>
     },
     {
+      path: "/softwares",
+      element: 
+      <div>
+        <Header />
+        <Softwares />
+      </div>
+    },
+    
+    
+    {
       path: "/anime",
       element: 
       <div>
@@ -40,6 +51,7 @@ const router = createBrowserRouter(
         <Anime />
       </div>
     }
+   
   ]
 )
 

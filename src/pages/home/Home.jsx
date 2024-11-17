@@ -1,7 +1,8 @@
 import React from 'react'
 import "./Home.css";
 import Cards from '../../components/cards/Cards'
-import { assets } from '../../assets/assets';
+import { homeAssets } from '../../assets/home/homeAssets';
+
 
 
 
@@ -11,10 +12,10 @@ const Home = () => {
     <div className="home-container">
       <div className="title"><h1>Categories</h1></div>
         <div className="cards-container">
-          <Cards name="Games" image={assets.games}/>
-          <Cards name="Entertainment" image={assets.entertainment}/>
-          <Cards name="Softwares" image={assets.softwares}/>
-          <Cards name="Anime" image={assets.anime}/>
+          <Cards name="Games" image={homeAssets.games}/>
+          <Cards name="Entertainment" image={homeAssets.entertainment}/>
+          <Cards name="Softwares" image={homeAssets.softwares}/>
+          <Cards name="Anime" image={homeAssets.anime}/>
         </div>
     </div>
    

@@ -1,7 +1,8 @@
 import React from 'react'
 import './Games.css';
 import SubCards from '../../components/subCards/SubCards'
-import { assets } from '../../assets/assets'
+import { gameAssets } from '../../assets/games/gamesAssets';
+
 
 
 const Games = () => {
@@ -13,27 +14,45 @@ const Games = () => {
     </div>
     <div className="sub-cards-container">
     <SubCards
-    name="FitGirl-Repacks"
+    name="FitGirl Repacks"
      url="https://fitgirl-repacks.site/" 
      external={true} 
-     image= {assets.fitgirl}/>
+     image= {gameAssets.fitgirl}/>
     
-    <SubCards
-      name="RG-Mechanics" 
-      url="https://rgmechanics.com/" 
-      external={true}
-      image= {assets.rgmechanics} />
     
     <SubCards 
-      name="Skidrow-Reloaded"
+      name="Skidrow & Reloaded"
       url= " https://www.skidrowreloaded.com/" 
       external={true}
-      image= {assets.skidrow} />
+      image= {gameAssets.skidrow} />
     
+   
+    </div>
+    <div className="sites">
+      <h2>Sites</h2>
+    </div>
+
+    <div className="more-container">
+    
+    <SubCards
+      name="RG Mechanics" 
+      url="https://rgmechanics.com/" 
+      external={true}
+      image= {gameAssets.rgmechanics} />
+
     <SubCards 
-      name="Steam-Unlocked"
+      name="Steam Unlocked"
       url="https://steamunlocked.net/" 
-      external={true} />
+      external={true}
+      image={gameAssets.steamunlocked} />
+
+    <SubCards 
+      name="Any Game"
+      url="https://anygame.net/en/?id=293518800000" 
+      external={true} 
+      image={gameAssets.anygame}/>
+    
+    
     </div>
     </div>
     
