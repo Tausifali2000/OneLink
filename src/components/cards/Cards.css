@@ -39,7 +39,7 @@
 
 
 .card:hover h2 {
-  inset: auto auto 220px 30px;
+  inset: auto auto 100px 30px;
   transition: inset 0.3s ease-out;
 }
 
