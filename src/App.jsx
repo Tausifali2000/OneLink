@@ -1,70 +1,25 @@
 import Header from "./components/header/Header";
 
 import Games from "./pages/games/Games";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Anime from "./pages/anime/Anime";
 import Entertainment from "./pages/entertainment/Entertainment";
 import Softwares from "./pages/softwares/Softwares";
 import Home from "./pages/home/Home";
 
-
-const router = createBrowserRouter(
-  [
-    {path:"/",
-      element: 
-      <div>
-        <Header />
-        <Home/>
-      </div>
-      
-    },
-    {
-      path: "/games",
-      element: 
-      <div>
-        <Header />
-        <Games />
-      </div>
-    },
-    {
-      path: "/entertainment",
-      element: 
-      <div>
-        <Header />
-        <Entertainment/>
-      </div>
-    },
-    {
-      path: "/softwares",
-      element: 
-      <div>
-        <Header />
-        <Softwares />
-      </div>
-    },
-    
-    
-    {
-      path: "/anime",
-      element: 
-      <div>
-        <Header />
-        <Anime />
-      </div>
-    }
-   
-  ]
-)
-
 function App() {
-
-
   return (
-    <>
-      <RouterProvider router={router} />
-      
-    </>
-  )
+    <HashRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/games" element={<Games />} />
+        <Route path="/entertainment" element={<Entertainment />} />
+        <Route path="/softwares" element={<Softwares />} />
+        <Route path="/anime" element={<Anime />} />
+      </Routes>
+    </HashRouter>
+  );
 }
 
-export default App
+export default App;
