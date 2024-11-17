@@ -51,6 +51,12 @@ const Games = () => {
       url="https://anygame.net/en/?id=293518800000" 
       external={true} 
       image={gameAssets.anygame}/>
+
+    <SubCards 
+      name="Online Fix"
+      url="https://online-fix.me/" 
+      external={true} 
+      image={gameAssets.anygame}/>
     
     
     </div>

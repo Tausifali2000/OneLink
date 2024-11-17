@@ -12,11 +12,20 @@ function App() {
     <HashRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/games" element={<Games />} />
-        <Route path="/entertainment" element={<Entertainment />} />
-        <Route path="/softwares" element={<Softwares />} />
-        <Route path="/anime" element={<Anime />} />
+        <Route path="/" 
+        element={<Home />} />
+        
+        <Route path="/games" 
+        element={<Games />} />
+        
+        <Route path="/entertainment" 
+        element={<Entertainment />} />
+        
+        <Route path="/softwares" 
+        element={<Softwares />} />
+        
+        <Route path="/anime" 
+        element={<Anime />} />
       </Routes>
     </HashRouter>
   );

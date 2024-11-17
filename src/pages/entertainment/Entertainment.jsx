@@ -14,7 +14,7 @@ const Entertainment = () => {
     <div className="sub-cards-container">
     <SubCards
     name="Popcorn Movies"
-     url="https://fitgirl-repacks.site/" 
+     url="https://www.popcornmovies.to/home" 
      external={true} 
      />
     
