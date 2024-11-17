@@ -1,10 +1,11 @@
 import Header from "./components/header/Header"
-import Home from "./pages/home/home"
+
 import Games from "./pages/games/Games"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Anime from "./pages/anime/Anime"
 import Entertainment from "./pages/entertainment/Entertainment"
 import Softwares from "./pages/softwares/Softwares"
+import Home from "./pages/home/home"
 
 
 const router = createBrowserRouter(
@@ -13,7 +14,7 @@ const router = createBrowserRouter(
       element: 
       <div>
         <Header />
-        <Home />
+        <Home/>
       </div>
       
     },
