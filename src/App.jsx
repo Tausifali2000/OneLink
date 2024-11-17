@@ -1,8 +1,6 @@
 import Header from "./components/header/Header"
 import Games from "./pages/games/Games"
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-
 import Anime from "./pages/anime/Anime"
 import Entertainment from "./pages/entertainment/Entertainment"
 import Softwares from "./pages/softwares/Softwares"
