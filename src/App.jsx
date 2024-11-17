@@ -5,7 +5,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Anime from "./pages/anime/Anime";
 import Entertainment from "./pages/entertainment/Entertainment";
 import Softwares from "./pages/softwares/Softwares";
-import Home from "./pages/home/Home";
+import Home from "./pages/home/Home.jsx";
 
 function App() {
   return (
