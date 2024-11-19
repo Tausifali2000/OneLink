@@ -2,6 +2,7 @@ import React from 'react'
 import '../games/Games.css';
 import SubCards from '../../components/subCards/SubCards';
 import { entAssets } from '../../assets/entertainment/entAssets';
+import Subcards1 from '../../components/subCards1/Subcards1';
 
 
 const Entertainment = () => {
@@ -12,14 +13,15 @@ const Entertainment = () => {
       <h1>Recommended</h1>
     </div>
     <div className="sub-cards-container">
-    <SubCards
-    name="Popcorn Movies"
-     url="https://www.popcornmovies.to/home" 
+    
+    <Subcards1 
+      name="Popcorn Movies"
+      image={entAssets.popcorn}
+      url="https://www.popcornmovies.to/home" 
      external={true} 
-     />
+      />
     
-    
-    <SubCards 
+    <Subcards1
       name="Flixwave"
       url= "https://flixwave.watch/home/" 
       external={true}
@@ -33,7 +35,7 @@ const Entertainment = () => {
 
     <div className="more-container">
     
-    <SubCards
+    <Subcards1
       name="Fmovies " 
       url="https://fmovies-hd.to/home/" 
       external={true}
@@ -64,6 +66,8 @@ const Entertainment = () => {
       name="Auto Embed"
       url="https://watch.autoembed.cc/" 
       external={true} />
+
+    
     
     
     </div>
