@@ -1,6 +1,8 @@
 import React from 'react'
 import '../games/Games.css';
 import SubCards from '../../components/subCards/SubCards';
+import Subcards1 from '../../components/subCards1/Subcards1';
+import { animeAssets } from '../../assets/anime/animeAssets';
 
 
 const Anime = () => {
@@ -11,17 +13,19 @@ const Anime = () => {
       <h1>Recommended</h1>
     </div>
     <div className="sub-cards-container">
-    <SubCards
+    <Subcards1
     name="Hianime"
      url="https://hianime.to/home" 
-     external={true} 
+     external={true}
+     image = {animeAssets.hianime} 
      />
     
     
-    <SubCards 
+    <Subcards1
       name="AniWatch"
       url= "https://aniwatchtv.to/home" 
       external={true}
+      image = {animeAssets.aniwatch}
        />
     
    
@@ -32,26 +36,30 @@ const Anime = () => {
 
     <div className="more-container">
     
-    <SubCards
+    <Subcards1
       name="Gogo Anime " 
       url="https://gogoanime3.cc/" 
       external={true}
+      image={animeAssets.gogoanime}
        />
 
-    <SubCards 
+    <Subcards1
       name="YukiWatch"
       url="https://yukiwatch.su/home" 
-      external={true} />
+      external={true}
+      image={animeAssets.yukiwatch} />
 
-    <SubCards 
+    <Subcards1 
       name="Kaido"
       url="https://kaido.to/home" 
-      external={true} />
+      external={true}
+      image = {animeAssets.kaido} />
 
-    <SubCards 
+    <Subcards1
       name="Anicrush"
       url="https://anicrush.to/home" 
-      external={true} />
+      external={true}
+      image= {animeAssets.anicrush} />
       
     
     

@@ -41,31 +41,31 @@ const Entertainment = () => {
       external={true}
       image= {entAssets.fmovies} />
 
-    <SubCards 
-      name="Freek"
-      url="https://freek.to/" 
-      external={true} />
+   
 
-    <SubCards 
+    <Subcards1
       name="BFlix"
       url="https://bflix.sh/home/" 
       external={true}
       image={entAssets.bflix} />
 
-    <SubCards 
+    <Subcards1
       name="Vid Binge"
       url="https://www.vidbinge.com/" 
-      external={true} />
+      external={true}
+      image = {entAssets.vidbinge} />
       
-    <SubCards 
+    <Subcards1
       name="Novafork"
       url="https://novafork.com/" 
-      external={true} />
+      external={true}
+      image={entAssets.novafork} />
 
-    <SubCards 
+    <Subcards1 
       name="Auto Embed"
       url="https://watch.autoembed.cc/" 
-      external={true} />
+      external={true} 
+      image={entAssets.autoembed}/>
 
     
     
