@@ -1,0 +1,35 @@
+body {
+  background-color: white
+  
+  
+}
+
+
+
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 2vh;
+  padding-left: 3vw;
+  
+ }
+
+.title {
+  
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 3vw;
+  margin-top: 8vh;
+
+
+}
+
+.title h1 {
+  font-weight: 400;
+}
+
